@@ -8,7 +8,7 @@ running a new container example:
 
 	$ docker network create --subnet=172.18.100.0/16 mynet
 	$ docker run \
-		--name jty-pf-postgres \
+		--name mypostgres-server \
 		-v "/physicalpath/var/lib/postgresql/9.5/main":"/var/lib/postgresql/9.5/main" \
 		-e POSTGRES_USER=postgres \
 		-e POSTGRES_PASSWORD=postgrespassword \
